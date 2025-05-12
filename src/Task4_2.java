@@ -11,11 +11,10 @@ public class Task4_2 {
 
         int count = 0;
 
-        // Перебираем все возможные подотрезки длиной >=3
+
         for (int l = 0; l < n; l++) {
             for (int r = l + 2; r < n; r++) {
                 boolean found = false;
-                // Проверяем все возможные j (средние элементы)
                 for (int j = l + 1; j < r; j++) {
                     int k = j + 1;
                     int i = j - 1;

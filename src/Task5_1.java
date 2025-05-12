@@ -14,7 +14,7 @@ public class Task5_1 {
         int close = 0;
         int balance = 0;
         List<Integer> need = new ArrayList<>();
-//считаем проблемные скобки
+
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c == '(') {
@@ -32,7 +32,6 @@ public class Task5_1 {
         }
 
 
-        //подсчитываем затрыты
         int cost = 0;
         if ( a > b * 2) {
 
@@ -57,7 +56,6 @@ public class Task5_1 {
                 cost += k * a;
             }
         }
-//вывод
         System.out.println(cost);
 
     }
